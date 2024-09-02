@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES5", // Compile down to ES5 for broader compatibility
+    "module": "CommonJS", // Compile modules to CommonJS for Node.js compatibility
+    "moduleResolution": "node", // Use Node's resolution algorithm for modules
+    "noImplicitAny": true, // Ensure all variables have a type
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Handle default imports from CommonJS modules
+    "resolveJsonModule": true, // Allow importing .json files
+    "isolatedModules": true, // Ensure each file can be transpiled separately
+    "jsx": "preserve", // Preserve JSX syntax (if you use React or similar)
+    "sourceMap": true, // Generate source maps for easier debugging
+    "incremental": true, // Enable incremental compilation for faster builds
+    "outDir": "./dist" // Output compiled files to the 'dist' directory
+  },
+  "compileOnSave": true, // Compile files on save
+  "include": ["src/**/*"], // Include all TypeScript files in the 'src' directory
+  "exclude": ["node_modules", "dist", "**/*.spec.ts"] // Exclude these directories
+}
